@@ -1,4 +1,4 @@
-# COMPUTER DEVICE SHOP #
+# ATM  #
 An application that simulates the operation of an ATM. It simulates the basic functions of an ATM. 
 
 The user can enter the card number corresponding to the template and the correct PIN code to access the account. After successful authorization, the user can:
