@@ -36,6 +36,9 @@ public class ContentATM {
     public static final String TAKE_THE_MONEY_MESSAGE = "Take the money.";
     public static final String UNKNOWN_OPERATION_MESSAGE = "Unknown operation, try again";
     public static final String HOURS_MESSAGE = " hours";
-
+    
+    private ContentATM(){
+        
+    }
 
 }
