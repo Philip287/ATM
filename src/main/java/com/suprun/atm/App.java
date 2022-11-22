@@ -3,6 +3,7 @@ package com.suprun.atm;
 import com.suprun.atm.entity.Atm;
 import com.suprun.atm.entity.BankCard;
 import com.suprun.atm.exception.CustomAtmException;
+import com.suprun.atm.service.ContentATM;
 import com.suprun.atm.service.MessageHelper;
 import com.suprun.atm.service.Operation;
 import com.suprun.atm.service.command.CommandExecutor;
@@ -17,7 +18,6 @@ import org.apache.logging.log4j.Logger;
 
 public class App {
 
-    private static final String GOODBYE_MESSAGE = "Thank you for visiting our ATM. Have a nice day!";
     private static final Logger LOGGER = LogManager.getLogger();
     public static BankCard bankCard;
     public static Atm atm = new Atm("1", 9999000000.0, 1000000.0);
@@ -43,7 +43,7 @@ public class App {
             LOGGER.error("Exception in App.execution(operation) method find ", e);
         }
         bankCard = null;
-        MessageHelper.writeMessage(GOODBYE_MESSAGE);
+        MessageHelper.writeMessage(ContentATM.GOODBYE_MESSAGE);
     }
 
 }
